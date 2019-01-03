@@ -6,63 +6,24 @@
 }
 
 body{
+  background-color: wheat;
+}
+
+.body-content{
        background: url("../images/bg2.jpg") no-repeat center center;
     background-size: cover;
 }
 
 home-bg{
-    background: url("../images/bg1.jpg") no-repeat center center;
-    background-size: cover;
     height: 100vh;
     width: 100vw;
-    z-index: -10000;
 }
 
 .landing-page{
-	height: 100vh;
-	background: url(../images/879.jpg) no-repeat center center;
-    background-size: cover;
-    z-index: 1000;
-    width: 100%;
-}
-.fullscreen-bg {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  overflow: hidden;
-  z-index: -100;
-  text-align:center;
-  box-shadow: 0 0 20px 20px white;
-}
-
-.fullscreen-bg__video {
-  position: absolute;
-  top: 0;
-  left: 0;
+	background: url(../images/tenor.gif) no-repeat center center;
+  background-size: cover;
+  height: 100vh;
   width: 100%;
-  height: 100%;
-}
-
-@media (min-aspect-ratio: 16/9) {
-  .fullscreen-bg__video {
-    height: 300%;
-    top: -100%;
-  }
-}
-
-@media (max-aspect-ratio: 16/9) {
-  .fullscreen-bg__video {
-    width: 300%;
-    left: -100%;
-  }
-}
-
-@media (max-width: 767px) {
-  .fullscreen-bg__video {
-    display: none;
-  }
 }
 
 img{
@@ -80,6 +41,11 @@ img{
 	line-height: auto;
 }
 
+a{
+  color:white;
+  text-decoration: none;
+}
+
 
 .foot {
 	text-align: center;
@@ -90,8 +56,7 @@ img{
 }
 
 #about-bod{
-    height: auto;
-    width: auto;
+    height: 100%;
     margin-top: 20px;
     margin-bottom: 10px;
 }
@@ -100,6 +65,18 @@ img{
 .logo{
     height: 50px;
     width: 50px;
+    margin-right: 0;: 
+}
+
+.logo-text{
+    color: white;
+    font-family: 'Satisfy', cursive;
+    font-size: 25pt;
+    margin-left: 0;
+    background: linear-gradient(to bottom left, #F2FC2A 0%, #E8810C 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
 }
 
 .mission{
@@ -129,18 +106,16 @@ img{
 
 
 
-
 #navi {
 	border: 1px solid rgba(231, 64, 64, 0.24);
-	box-shadow: 0 1px 5px 1px lightgrey;
 	font-family: 'Lato', sans-serif;
-	text-transform: uppercase;
-    background-color: rgba(231, 64, 64, 0.74);
+  background-color: rgba(231, 64, 64, 0.74);
 	position: sticky;
 	top: 0;
 	width: 100%;
 	z-index: 1000;
 	font-size: 13pt;
+  transition: 0.5s;
 }
 
  #text-cont{
@@ -148,6 +123,7 @@ img{
     font-family: 'Tangerine', cursive;
     text-shadow: 0px 0 2px grey;
     padding-top: 20px;
+    margin-bottom: 20px;
  }
 
  #body-cont{
@@ -162,38 +138,45 @@ img{
 	border-left: 1px solid rgba(0,0,0,0.50);
 	border-bottom-left-radius: 4px;
 	border-left-style: groove;
+
 }
 
 #navi-link:hover{
 	background-color: blanchedalmond;
 	box-shadow: 0px 0px 2px 0px wheat;
 	text-shadow: 1px 2px 1px grey;
+  color: black;
 	
 }
 
+
 .active{
     background-color: wheat;
+    color:black;
 }
 
-.gal-car {
-	height: 90vh;
-    margin: 0;
+.carousel-inner{
+  height: 85%;
+}
+
+.gal-car{
+    width: 85%;
 }
 
 .index-header {
 	text-align: center;
 	font-family: 'Yellowtail', cursive;
-	font-size: 40pt;
-	text-shadow: 2px 0 1px grey;
-    color: wheat;
-    padding-top: 15%;
+	font-size: 4em;
+	text-shadow: 2px 0 2px wheat;
+    color: rgba(231, 64, 64);
+    padding-top: 17vh;
 	
 }
 
 .index-bod{
-    font-size: 25pt;
-    text-shadow: 2px 0 3px wheat;
-    color: wheat;
+    font-size: 3em;
+    text-shadow: 2px 0 2px wheat;
+    color: rgba(231, 64, 64);
     font-family: 'Parisienne', cursive;
     font-weight: 3px;
 }
@@ -201,16 +184,24 @@ img{
 #index-btn{
     background-color: transparent;
     border: 1px solid wheat;
-    font-size:15pt;
+    font-size:20pt;
     color: wheat;
     font-family: 'Great Vibes', cursive;
 }
 
 #index-btn:hover{
     background-color: wheat;
-    color: black;
+    color: rgba(231, 64, 64);
 }
 
+.navi-link{
+  color:white;
+}
+
+.nav-link:hover{
+  background-color: wheat;
+    color: black;
+}
 
 
 .cap {
@@ -237,27 +228,12 @@ img{
 
 .home-cards{
     margin-top: 30px;
-    height: 500px;
+    height: auto;
     margin-bottom: 30px;
 
 }
 
-@media only screen and (max-width: 940px){
-    .gal-car {
-    height: 100%;
-    margin: 0;
-    }
+.about-photo{
+  vertical-align: center;
+  margin-top: 50px;
 }
-
-
-@media only screen and (min-width: 401px) {
-    .gal-car {
-    height: 100%;
-    margin: 0;
-    }
-}
-
-.gal{
-    margin-top: 20px;
-}
-
