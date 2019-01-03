@@ -119,12 +119,17 @@ a{
 }
 
  #text-cont{
-    font-size: 50pt;
+    font-size: 80pt;
     font-family: 'Tangerine', cursive;
-    text-shadow: 0px 0 2px grey;
+    text-shadow: 1px 1px 2px red;
     padding-top: 20px;
     margin-bottom: 20px;
  }
+.carousel-caption
+{
+  background-color: rgba(231, 64, 64, 0.74);
+  border-radius: 10px;
+}
 
  #body-cont{
     height: 100vh;
@@ -161,6 +166,23 @@ a{
 
 .gal-car{
     width: 85%;
+}
+
+
+.modal-title{
+  font-family: 'Charm', cursive;
+  text-align: center;
+  color: black;
+  text-shadow: 1px 1px 1px red;
+  font-size: 20pt;
+}
+
+.gal-cont{
+  height: auto;
+  width: 80%;
+  margin-left: 10%;
+  text-align: center
+
 }
 
 .index-header {
