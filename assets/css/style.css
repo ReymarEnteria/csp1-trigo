@@ -10,7 +10,7 @@ body{
 }
 
 .body-content{
-       background: url("../images/bg2.jpg") no-repeat center center;
+    background: url("../images/bg2.jpg") no-repeat center center;
     background-size: cover;
 }
 
@@ -82,12 +82,18 @@ a{
 .mission{
     margin-top: 3%;
     font-size: 13pt;
+    background-color: white;
+    border-radius: 20px;
+    padding-top: 3%;
 }
 
 
 .vision{
     margin-top: 3%;
     font-size: 13pt;
+    background-color: white;
+    border-radius: 20px;
+    padding-top: 3%;
 }
 
 
@@ -139,25 +145,15 @@ a{
 	height: auto;
 }
 
-#navi-link {
-	border-left: 1px solid rgba(0,0,0,0.50);
-	border-bottom-left-radius: 4px;
-	border-left-style: groove;
-
-}
 
 #navi-link:hover{
-	background-color: blanchedalmond;
-	box-shadow: 0px 0px 2px 0px wheat;
-	text-shadow: 1px 2px 1px grey;
-  color: black;
-	
+  border-bottom: 2px solid white;
 }
 
 
 .active{
-    background-color: wheat;
-    color:black;
+  border-bottom: 2px solid white;
+	text-shadow: 1px 2px 1px grey;
 }
 
 .carousel-inner{
@@ -220,10 +216,7 @@ a{
   color:white;
 }
 
-.nav-link:hover{
-  background-color: wheat;
-    color: black;
-}
+
 
 
 .cap {
@@ -258,4 +251,8 @@ a{
 .about-photo{
   vertical-align: center;
   margin-top: 50px;
+}
+
+.navbar-light .navbar-nav .nav-link{
+  color: white !important
 }
